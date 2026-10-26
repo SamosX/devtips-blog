@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodePulse — Programming Tips &amp; Web Dev</title>
+  <meta name="description" content="A blog about programming tips, web development tricks, and coding best practices for developers." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c63ff' stroke-width='2'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+      CodePulse
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="posts/post1.html">Posts</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+      Web &amp; Mobile Dev Blog
+    </div>
+    <h1>Level up your<br /><span>coding skills</span></h1>
+    <p>Practical programming tips, tutorials, and insights for developers at every stage of their journey.</p>
+    <div class="hero-btns">
+      <a href="posts/post1.html" class="btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Read Latest Post
+      </a>
+      <a href="about.html" class="btn btn-outline">About Us</a>
+    </div>
+
+    <!-- Animated code window -->
+    <div class="hero-visual">
+      <div class="code-window anim-float">
+        <div class="code-window-bar">
+          <span class="code-dot code-dot-r"></span>
+          <span class="code-dot code-dot-y"></span>
+          <span class="code-dot code-dot-g"></span>
+          <span class="code-filename">styles.css</span>
+        </div>
+        <div class="code-body">
+          <div><span class="c-prop">:root</span> {</div>
+          <div>&nbsp;&nbsp;<span class="c-prop">--accent</span>: <span class="c-str">#6c63ff</span>;</div>
+          <div>&nbsp;&nbsp;<span class="c-prop">--radius</span>: <span class="c-val">12px</span>;</div>
+          <div>}</div>
+          <div>&nbsp;</div>
+          <div><span class="c-kw">@keyframes</span> <span class="c-fn">fadeUp</span> {</div>
+          <div>&nbsp;&nbsp;<span class="c-prop">from</span> { <span class="c-prop">opacity</span>: <span class="c-val">0</span>; }</div>
+          <div>&nbsp;&nbsp;<span class="c-prop">to</span>&nbsp;&nbsp; { <span class="c-prop">opacity</span>: <span class="c-val">1</span>; }</div>
+          <div>}</div>
+          <div>&nbsp;</div>
+          <div><span class="c-cm">/* clamp() — no media queries */</span></div>
+          <div><span class="c-prop">font-size</span>: <span class="c-fn">clamp</span>(<span class="c-val">1rem</span>, <span class="c-val">4vw</span>, <span class="c-val">3rem</span>);</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Posts Published</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Authors</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">CSS Tips</div>
+      </div>
+    </div>
+
+    <!-- FEATURED -->
+    <div class="featured">
+      <div>
+        <div class="featured-label">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Featured
+        </div>
+        <h2>5 CSS Tips That Will Change the Way You Write Styles</h2>
+        <p style="color:var(--muted);font-size:0.9rem;margin:0.5rem 0 1.25rem;">
+          From custom properties to modern layout techniques — these tricks make your CSS cleaner and smarter.
+        </p>
+        <a href="posts/post1.html" class="btn" style="font-size:0.88rem;padding:0.5rem 1.1rem;">
+          Read Post
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="featured-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- POSTS GRID -->
+    <h2 class="section-title">All Posts</h2>
+    <p class="section-sub">Tips, tutorials &amp; reflections on web development</p>
+
+    <div class="cards-grid">
+
+      <a href="posts/post1.html" style="text-decoration:none;color:inherit;" class="anim-fade-up delay-1">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+              <path d="M8 12h8M12 8v8"/>
+            </svg>
+          </div>
+          <span class="card-tag">CSS</span>
+          <h3>5 CSS Tips That Will Change the Way You Write Styles</h3>
+          <p>Practical techniques to write cleaner, more maintainable CSS using modern features.</p>
+          <div class="card-meta">
+            <span>Oct 2026</span>
+            <span>3 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="posts/post2.html" style="text-decoration:none;color:inherit;" class="anim-fade-up delay-2">
+        <div class="card">
+          <div class="card-icon" style="background:rgba(255,101,132,0.1);color:var(--accent2);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <span class="card-tag" style="background:rgba(255,101,132,0.14);color:var(--accent2);">Reflection</span>
+          <h3>What I Learned Building This Blog from Scratch</h3>
+          <p>A final reflection on the journey: challenges, lessons, and how our skills evolved.</p>
+          <div class="card-meta">
+            <span>Oct 2026</span>
+            <span>2 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <div class="card anim-fade-up delay-3" style="opacity:0.4;cursor:default;">
+        <div class="card-icon" style="background:rgba(136,146,164,0.08);color:var(--muted);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <span class="card-tag" style="background:rgba(136,146,164,0.1);color:var(--muted);">Coming Soon</span>
+        <h3>JavaScript Async/Await: A Practical Guide</h3>
+        <p>Understanding asynchronous programming without the headache.</p>
+        <div class="card-meta"><span>Nov 2026</span></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2026 <strong>CodePulse</strong> &nbsp;&middot;&nbsp;
+      Anderson Araya Meoño &nbsp;&middot;&nbsp; Cristopher Abraham Rojas &nbsp;&middot;&nbsp; Josias Esquivel Martinez
+      &nbsp;&middot;&nbsp; <a href="https://github.com">View on GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
