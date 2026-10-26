@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — CodePulse</title>
+  <meta name="description" content="Meet the authors of CodePulse — a web development blog built by students at Colegio Técnico Profesional Santa Lucía." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c63ff' stroke-width='2'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+      CodePulse
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="posts/post1.html">Posts</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- ABOUT HERO -->
+  <div class="about-hero">
+    <div class="anim-fade-up" style="max-width:600px;margin:0 auto;">
+      <span class="hero-badge" style="margin-bottom:1.2rem;">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        Colegio Técnico Profesional Santa Lucía
+      </span>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;margin-bottom:0.75rem;">About CodePulse</h1>
+      <p style="color:var(--muted);font-size:1rem;max-width:480px;margin:0 auto;">
+        A blog about programming tips and web development, created by students passionate about building things for the web.
+      </p>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- MISSION -->
+    <div style="max-width:680px;margin:0 auto 3rem;" class="anim-fade-up delay-1">
+      <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:0.75rem;">Our Mission</h2>
+      <p style="color:var(--muted);font-size:0.95rem;margin-bottom:1rem;">
+        CodePulse was created as part of the English for Web Development course — 10th grade.
+        Our goal is to break down complex programming concepts into practical, easy-to-follow tips
+        that any developer can use, whether they are just starting out or already building real projects.
+      </p>
+      <p style="color:var(--muted);font-size:0.95rem;">
+        This blog is built with plain HTML and CSS — no frameworks, no dependencies — and hosted
+        on GitHub Pages as a self-hosted platform.
+      </p>
+
+      <div class="callout" style="margin-top:1.5rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        <div>
+          <strong>What you will find here:</strong> practical CSS &amp; JavaScript tips, web development
+          tutorials for beginners, mobile app development insights, and honest reflections on learning to code.
+        </div>
+      </div>
+    </div>
+
+    <!-- AUTHORS -->
+    <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:0.4rem;" class="anim-fade-up delay-2">Authors</h2>
+    <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1.5rem;" class="anim-fade-up delay-2">The team behind CodePulse</p>
+
+    <div class="authors-grid">
+
+      <div class="author-card anim-fade-up delay-2">
+        <div class="author-avatar">AA</div>
+        <div class="author-name">Anderson Araya Meoño</div>
+        <div class="author-role">Web Developer &amp; Author</div>
+        <p style="color:var(--muted);font-size:0.82rem;margin-bottom:0.75rem;">
+          Passionate about front-end development and creating clean, responsive interfaces.
+        </p>
+        <div class="skills-list">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="author-card anim-fade-up delay-3">
+        <div class="author-avatar" style="background:linear-gradient(135deg,#ff6584,#f78c6c);">CR</div>
+        <div class="author-name">Cristopher Abraham Rojas</div>
+        <div class="author-role">Web Developer &amp; Author</div>
+        <p style="color:var(--muted);font-size:0.82rem;margin-bottom:0.75rem;">
+          Interested in mobile-first design and building web applications that work on any device.
+        </p>
+        <div class="skills-list">
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Web Dev</span>
+          <span class="skill-tag">Mobile Apps</span>
+        </div>
+      </div>
+
+      <div class="author-card anim-fade-up delay-4">
+        <div class="author-avatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7);">JE</div>
+        <div class="author-name">Josias Esquivel Martinez</div>
+        <div class="author-role">Web Developer &amp; Author</div>
+        <p style="color:var(--muted);font-size:0.82rem;margin-bottom:0.75rem;">
+          Focused on writing clear, maintainable code and sharing knowledge with the developer community.
+        </p>
+        <div class="skills-list">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Web Dev</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TECH STACK -->
+    <div style="max-width:680px;margin:3rem auto 0;" class="anim-fade-up delay-5">
+      <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:1.25rem;">Built With</h2>
+
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>HTML5</span><span>Structure</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>CSS3 — Custom Properties, Flexbox, Grid, Animations</span><span>Styling</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>GitHub Pages</span><span>Hosting</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:100%;background:linear-gradient(90deg,#43e97b,#38f9d7);"></div></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2026 <strong>CodePulse</strong> &nbsp;&middot;&nbsp;
+      Anderson Araya Meoño &nbsp;&middot;&nbsp; Cristopher Abraham Rojas &nbsp;&middot;&nbsp; Josias Esquivel Martinez
+      &nbsp;&middot;&nbsp; <a href="https://github.com">View on GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>

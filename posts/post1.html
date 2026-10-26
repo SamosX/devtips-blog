@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5 CSS Tips — CodePulse</title>
+  <meta name="description" content="5 practical CSS tips that will make your stylesheets cleaner and more powerful." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c63ff' stroke-width='2'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="../index.html" class="nav-logo" style="text-decoration:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+      CodePulse
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="post1.html" class="active">Posts</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- POST HEADER -->
+  <div class="post-header">
+    <div style="max-width:720px;margin:0 auto;">
+      <p class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../index.html">Posts</a> &rsaquo; CSS Tips</p>
+      <span class="card-tag">CSS</span>
+      <h1>5 CSS Tips That Will Change the Way You Write Styles</h1>
+      <div class="post-meta">
+        <span>October 2026</span>
+        <span><strong>3 min read</strong></span>
+        <span>Web Development</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST CONTENT -->
+  <article class="post-content">
+
+    <p>
+      CSS can feel overwhelming at first — especially when your stylesheets start growing into
+      hundreds of lines. But with a few modern techniques, you can write styles that are cleaner,
+      easier to maintain, and more powerful. Here are <strong>5 CSS tips</strong> every web
+      developer should know.
+    </p>
+
+    <!-- TIP 1 -->
+    <h2>1. Use CSS Custom Properties (Variables)</h2>
+    <p>
+      Instead of repeating colors, font sizes, or spacing values throughout your CSS, define them
+      once as variables inside <code>:root</code>. This makes it incredibly easy to update your
+      entire design from a single place.
+    </p>
+    <pre data-lang="css"><code>:root {
+  --primary: #6c63ff;
+  --text: #e2e8f0;
+  --spacing: 1.5rem;
+}
+
+button {
+  background: var(--primary);
+  padding: var(--spacing);
+  color: var(--text);
+}</code></pre>
+    <p>
+      If you ever want to change your brand color, you update it in <em>one line</em> instead of
+      searching through your entire file.
+    </p>
+
+    <!-- TIP 2 -->
+    <h2>2. Master Flexbox for Layouts</h2>
+    <p>
+      Flexbox is one of the most useful CSS tools for building layouts. Use it to center elements,
+      distribute space, and create responsive navigation bars with minimal code.
+    </p>
+    <pre data-lang="css"><code>.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Center anything */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</code></pre>
+
+    <div class="callout">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      <div>
+        <strong>Quick rule:</strong> Use <code>justify-content</code> for horizontal alignment
+        and <code>align-items</code> for vertical alignment (in a row-direction flex container).
+      </div>
+    </div>
+
+    <!-- TIP 3 -->
+    <h2>3. Use <code>clamp()</code> for Responsive Typography</h2>
+    <p>
+      Instead of writing multiple media queries just to change font sizes, use <code>clamp()</code>
+      to let the browser calculate a fluid size between a minimum and maximum value.
+    </p>
+    <pre data-lang="css"><code>h1 {
+  /* min: 1.5rem | preferred: 4vw | max: 3rem */
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}</code></pre>
+    <p>
+      Your heading will scale smoothly with the viewport — no media queries needed.
+    </p>
+
+    <!-- TIP 4 -->
+    <h2>4. Use <code>:is()</code> to Simplify Selectors</h2>
+    <p>
+      The <code>:is()</code> pseudo-class lets you group multiple selectors together, reducing
+      repetition and making your CSS easier to read.
+    </p>
+    <pre data-lang="css"><code>/* Instead of this: */
+h1 a, h2 a, h3 a { color: inherit; }
+
+/* Write this: */
+:is(h1, h2, h3) a { color: inherit; }</code></pre>
+
+    <!-- TIP 5 -->
+    <h2>5. Smooth Scroll with One Line</h2>
+    <p>
+      Add smooth scrolling to your entire page without a single line of JavaScript:
+    </p>
+    <pre data-lang="css"><code>html {
+  scroll-behavior: smooth;
+}</code></pre>
+    <p>
+      Now all anchor links (<code>&lt;a href="#section"&gt;</code>) will scroll smoothly instead
+      of jumping instantly.
+    </p>
+
+    <!-- VIDEO SECTION -->
+    <h2>Learn More: CSS Tips in Action</h2>
+    <p>
+      The following video covers CSS tips and modern features in a practical format — perfect for
+      developers who learn by seeing real code examples.
+    </p>
+
+    <!-- VIDEO: replace this block with your iframe when ready -->
+    <div style="
+      background: var(--card);
+      border: 2px dashed var(--border);
+      border-radius: var(--radius);
+      aspect-ratio: 16/9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 2rem 0 0;
+    ">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <circle cx="12" cy="12" r="10"/>
+        <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+      </svg>
+      Video will appear here
+    </div>
+    <div class="video-caption">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><polyline points="8 21 12 17 16 21"/>
+      </svg>
+      <!-- Write your video description here -->
+    </div>
+
+    <h3>Why I chose this video</h3>
+    <p>
+      I selected this video because it complements the tips in this post perfectly. The visual
+      approach helps reinforce concepts like the cascade, specificity, and layout models that
+      underpin everything covered above. Watching real examples of <code>flexbox</code>, custom
+      properties, and responsive design in action makes the concepts much easier to internalize
+      than reading alone.
+    </p>
+
+    <!-- CONCLUSION -->
+    <h2>Wrapping Up</h2>
+    <p>
+      These five techniques — CSS variables, Flexbox, <code>clamp()</code>, <code>:is()</code>,
+      and smooth scroll — are small changes that make a big difference. Start applying them in
+      your next project and you will immediately notice how much cleaner and more maintainable
+      your stylesheets become.
+    </p>
+    <p>
+      Happy coding.
+    </p>
+
+    <!-- NAV BETWEEN POSTS -->
+    <div style="display:flex;justify-content:flex-end;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);">
+      <a href="post2.html" class="btn">
+        Next Post: My Reflection
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2026 <strong>CodePulse</strong> &nbsp;&middot;&nbsp;
+      Anderson Araya Meoño &nbsp;&middot;&nbsp; Cristopher Abraham Rojas &nbsp;&middot;&nbsp; Josias Esquivel Martinez
+      &nbsp;&middot;&nbsp; <a href="https://github.com">View on GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
